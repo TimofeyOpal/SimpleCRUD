@@ -1,0 +1,15 @@
+C:\Users\timof\source\repos\store\DB.AccessData\bin\Debug\net5.0\DB.AccessData.deps.json
+C:\Users\timof\source\repos\store\DB.AccessData\bin\Debug\net5.0\DB.AccessData.runtimeconfig.json
+C:\Users\timof\source\repos\store\DB.AccessData\bin\Debug\net5.0\DB.AccessData.runtimeconfig.dev.json
+C:\Users\timof\source\repos\store\DB.AccessData\bin\Debug\net5.0\DB.AccessData.dll
+C:\Users\timof\source\repos\store\DB.AccessData\bin\Debug\net5.0\ref\DB.AccessData.dll
+C:\Users\timof\source\repos\store\DB.AccessData\bin\Debug\net5.0\DB.AccessData.pdb
+C:\Users\timof\source\repos\store\DB.AccessData\obj\Debug\net5.0\DB.AccessData.csproj.AssemblyReference.cache
+C:\Users\timof\source\repos\store\DB.AccessData\obj\Debug\net5.0\DB.AccessData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\timof\source\repos\store\DB.AccessData\obj\Debug\net5.0\DB.AccessData.AssemblyInfoInputs.cache
+C:\Users\timof\source\repos\store\DB.AccessData\obj\Debug\net5.0\DB.AccessData.AssemblyInfo.cs
+C:\Users\timof\source\repos\store\DB.AccessData\obj\Debug\net5.0\DB.AccessData.csproj.CoreCompileInputs.cache
+C:\Users\timof\source\repos\store\DB.AccessData\obj\Debug\net5.0\DB.AccessData.dll
+C:\Users\timof\source\repos\store\DB.AccessData\obj\Debug\net5.0\ref\DB.AccessData.dll
+C:\Users\timof\source\repos\store\DB.AccessData\obj\Debug\net5.0\DB.AccessData.pdb
+C:\Users\timof\source\repos\store\DB.AccessData\obj\Debug\net5.0\DB.AccessData.genruntimeconfig.cache
