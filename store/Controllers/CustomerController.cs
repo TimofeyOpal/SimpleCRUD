@@ -15,8 +15,8 @@ namespace store.Controllers
     [Route("[controller]")]
     public class CustomerController : ControllerBase
     {
-        private IStandartCrud<Customer> _contextCustomer { get; set; }
-        public CustomerController(IStandartCrud<Customer> contextCustomer)
+        readonly CustomersStandartCrud _contextCustomer;
+        public CustomerController(CustomersStandartCrud contextCustomer)
         {
             _contextCustomer = contextCustomer;
         }

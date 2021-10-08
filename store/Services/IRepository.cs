@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace store.Services
 {
-   public interface IStandartCrud<TEntity> where TEntity : class
+   public interface IRepository<TEntity> where TEntity : class
     {
         IEnumerable <TEntity> All { get; }
         Task Add(TEntity entity);

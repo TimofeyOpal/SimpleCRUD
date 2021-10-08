@@ -39,7 +39,7 @@ namespace store
 
             services.AddDbContext<DB.AccessData.WebApiCoreContext>(builder => builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("store")));
 
-            services.AddScoped<IStandartCrud<Customer>, CustomersStandartCrud>();
+            services.AddScoped<CustomersStandartCrud>();
 
             services.AddSwaggerGen(c =>
             {

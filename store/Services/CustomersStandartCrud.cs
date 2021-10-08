@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace store.Services
 {
-    public class CustomersStandartCrud : IStandartCrud<Customer>
+    public class CustomersStandartCrud : IRepository<Customer>
     {
         WebApiCoreContext _context;
 
