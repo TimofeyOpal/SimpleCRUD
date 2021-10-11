@@ -50,8 +50,10 @@ namespace store.Services
         public async Task Update(Customer entity)
         {
           _context.Customers.Update(entity);
-          await _context.SaveChangesAsync();
-           
+          await _context.SaveChangesAsync(); 
         }
+        
+
+
     }
 }

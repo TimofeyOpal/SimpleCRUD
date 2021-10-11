@@ -45,10 +45,10 @@ namespace store.Controllers
             await _contextCustomer.Update(customer);
         }
 
-        [HttpPost("quary/{routeName}")]
-        public async Task Post([FromQuery] string queryName, [FromRoute] string routeName, [FromForm] Customer customer, [FromBody] Customer customer_, [FromHeader] string headerName)
+        [HttpPost("GetCustomerById/{routeName}")]// [FromRoute] string routeName, [FromForm] Customer customer, [FromBody] Customer customer_, [FromHeader] string headerName
+        public async Task<Customer> GetByCustomerID([FromQuery] string queryName)//https://{site}/Customer/GetCustomerById/FromQuery?queryName=100 
         {
-           await _contextCustomer.All();   
+           return await _contextCustomer.GetById(queryName); 
         }
 
 
