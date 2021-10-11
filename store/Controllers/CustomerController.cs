@@ -46,9 +46,10 @@ namespace store.Controllers
         }
 
         [HttpPost("GetCustomerById/{routeName}")]// [FromRoute] string routeName, [FromForm] Customer customer, [FromBody] Customer customer_, [FromHeader] string headerName
-        public async Task<Customer> GetByCustomerID([FromQuery] string queryName)//https://{site}/Customer/GetCustomerById/FromQuery?queryName=100 
+        public async Task<ActionResult<Customer>> GetByCustomerID([FromQuery] string queryName)//https://{site}/Customer/GetCustomerById/FromQuery?queryName=100 
         {
-           return await _contextCustomer.GetById(queryName); 
+            var customer = await _contextCustomer.GetById(queryName);
+            return customer == null ? BadRequest() : Ok(customer);      
         }
 
 
