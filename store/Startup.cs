@@ -37,9 +37,9 @@ namespace store
             string connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddControllers();
 
-            services.AddDbContext<DB.AccessData.WebApiCoreContext>(builder => builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("store")));
+            services.AddDbContext<DB.AccessData.WebApiCoreContext>(builder => builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("DB.AccessData")));
 
-            services.AddScoped<CustomersStandartCrud>();
+            services.AddScoped<ICrud<Customer>,CustomersStandartCrud>();
 
             services.AddSwaggerGen(c =>
             {

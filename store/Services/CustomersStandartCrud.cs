@@ -1,5 +1,6 @@
 ﻿using DB.AccessData;
 using DB.AccessData.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace store.Services
 {
-    public class CustomersStandartCrud : IRepository<Customer>
+    public class CustomersStandartCrud : ICrud<Customer>
     {
         WebApiCoreContext _context;
 
@@ -15,7 +16,7 @@ namespace store.Services
         {
             _context = context;
         }
-        public IEnumerable<Customer> All => _context.Customers.ToList();
+        public async Task<IEnumerable<Customer>> All() => await _context.Customers.ToListAsync();
 
         public async Task Add(Customer entity)
         {
@@ -28,21 +29,28 @@ namespace store.Services
             _context.Customers.Remove(entity);
            await _context.SaveChangesAsync();
         }
-
-        public Customer GetById(string Id)
+        public async Task Delete(string id)
         {
-          return _context.Customers.FirstOrDefault(u => u.Id == Id); 
+            var entity = await _context.Customers.FirstOrDefaultAsync(i => i.Id == id);
+            _context.Customers.Remove(entity);
+            await _context.SaveChangesAsync();
         }
 
-        public Customer GetById(int Id)
-        {
-          return  _context.Customers.FirstOrDefault(u => u.Id == Id.ToString());
+
+        public async Task<Customer> GetById(string id)
+        {       
+            return await _context.Customers.FirstOrDefaultAsync(i => i.Id == id);
         }
 
-        public void Update(Customer entity)
+        public async Task<Customer> GetById(int Id)
+        {
+          return await  _context.Customers.FirstOrDefaultAsync(u => u.Id == Id.ToString());
+        }
+
+        public async Task Update(Customer entity)
         {
           _context.Customers.Update(entity);
-          _context.SaveChangesAsync();
+          await _context.SaveChangesAsync();
            
         }
     }
