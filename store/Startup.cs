@@ -17,6 +17,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.IdentityModel.Protocols;
 using store.Services;
 using DB.AccessData.Models;
+using CommonJtw;
 
 namespace store
 {
@@ -33,13 +34,28 @@ namespace store
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+            var authOptionsConfigurations = Configuration.GetSection("Auth");
             string connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddControllers();
 
+            services.Configure<AuthOptions>(authOptionsConfigurations);
+
             services.AddDbContext<DB.AccessData.WebApiCoreContext>(builder => builder.UseSqlServer(connectionString, b => b.MigrationsAssembly("DB.AccessData")));
 
-            services.AddScoped<ICrud<Customer>,CustomersStandartCrud>();
+            services.AddScoped<ICrud<Customer>, CustomersStandartCrud>();
+
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.AllowAnyOrigin().
+                    AllowAnyMethod().
+                    AllowAnyHeader();
+                });
+            });
+        
+
 
             services.AddSwaggerGen(c =>
             {
@@ -57,10 +73,12 @@ namespace store
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "store v1"));
             }
 
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
+            app.UseCors();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

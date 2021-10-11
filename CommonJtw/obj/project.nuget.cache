@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Af9Kg5JlETro6zBD4Fg0+PDJEBgK68swz5PBWzruJyaFTtukDkar+xTbmN4gBd5WcBWqYNiUadGXhmAbgUs1ow==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\timof\\source\\repos\\store\\CommonJtw\\CommonJtw.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\timof\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\timof\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.13.1\\microsoft.identitymodel.jsonwebtokens.6.13.1.nupkg.sha512",
+    "C:\\Users\\timof\\.nuget\\packages\\microsoft.identitymodel.logging\\6.13.1\\microsoft.identitymodel.logging.6.13.1.nupkg.sha512",
+    "C:\\Users\\timof\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.13.1\\microsoft.identitymodel.tokens.6.13.1.nupkg.sha512",
+    "C:\\Users\\timof\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.13.1\\system.identitymodel.tokens.jwt.6.13.1.nupkg.sha512",
+    "C:\\Users\\timof\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

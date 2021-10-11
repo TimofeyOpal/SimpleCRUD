@@ -1,0 +1,12 @@
+C:\Users\timof\source\repos\store\CommonJtw\bin\Debug\net5.0\CommonJtw.deps.json
+C:\Users\timof\source\repos\store\CommonJtw\bin\Debug\net5.0\CommonJtw.dll
+C:\Users\timof\source\repos\store\CommonJtw\bin\Debug\net5.0\ref\CommonJtw.dll
+C:\Users\timof\source\repos\store\CommonJtw\bin\Debug\net5.0\CommonJtw.pdb
+C:\Users\timof\source\repos\store\CommonJtw\obj\Debug\net5.0\CommonJtw.csproj.AssemblyReference.cache
+C:\Users\timof\source\repos\store\CommonJtw\obj\Debug\net5.0\CommonJtw.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\timof\source\repos\store\CommonJtw\obj\Debug\net5.0\CommonJtw.AssemblyInfoInputs.cache
+C:\Users\timof\source\repos\store\CommonJtw\obj\Debug\net5.0\CommonJtw.AssemblyInfo.cs
+C:\Users\timof\source\repos\store\CommonJtw\obj\Debug\net5.0\CommonJtw.csproj.CoreCompileInputs.cache
+C:\Users\timof\source\repos\store\CommonJtw\obj\Debug\net5.0\CommonJtw.dll
+C:\Users\timof\source\repos\store\CommonJtw\obj\Debug\net5.0\ref\CommonJtw.dll
+C:\Users\timof\source\repos\store\CommonJtw\obj\Debug\net5.0\CommonJtw.pdb

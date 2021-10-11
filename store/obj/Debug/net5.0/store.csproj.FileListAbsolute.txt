@@ -61,3 +61,5 @@ C:\Users\timof\source\repos\store\store\obj\Debug\net5.0\store.dll
 C:\Users\timof\source\repos\store\store\obj\Debug\net5.0\ref\store.dll
 C:\Users\timof\source\repos\store\store\obj\Debug\net5.0\store.pdb
 C:\Users\timof\source\repos\store\store\obj\Debug\net5.0\store.genruntimeconfig.cache
+C:\Users\timof\source\repos\store\store\bin\Debug\net5.0\CommonJtw.dll
+C:\Users\timof\source\repos\store\store\bin\Debug\net5.0\CommonJtw.pdb

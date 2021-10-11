@@ -4,6 +4,70 @@
     "C:\\Users\\timof\\source\\repos\\store\\store\\store.csproj": {}
   },
   "projects": {
+    "C:\\Users\\timof\\source\\repos\\store\\CommonJtw\\CommonJtw.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\timof\\source\\repos\\store\\CommonJtw\\CommonJtw.csproj",
+        "projectName": "CommonJtw",
+        "projectPath": "C:\\Users\\timof\\source\\repos\\store\\CommonJtw\\CommonJtw.csproj",
+        "packagesPath": "C:\\Users\\timof\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\timof\\source\\repos\\store\\CommonJtw\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\timof\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.13.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.13.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\timof\\source\\repos\\store\\DB.AccessData\\DB.AccessData.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -59,6 +123,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.13.1, )"
             }
           },
           "imports": [
@@ -104,6 +172,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\timof\\source\\repos\\store\\CommonJtw\\CommonJtw.csproj": {
+                "projectPath": "C:\\Users\\timof\\source\\repos\\store\\CommonJtw\\CommonJtw.csproj"
+              },
               "C:\\Users\\timof\\source\\repos\\store\\DB.AccessData\\DB.AccessData.csproj": {
                 "projectPath": "C:\\Users\\timof\\source\\repos\\store\\DB.AccessData\\DB.AccessData.csproj"
               }
@@ -143,6 +214,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.13.1, )"
             }
           },
           "imports": [

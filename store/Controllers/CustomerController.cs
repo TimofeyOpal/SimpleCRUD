@@ -51,10 +51,5 @@ namespace store.Controllers
             var customer = await _contextCustomer.GetById(queryName);
             return customer == null ? BadRequest() : Ok(customer);      
         }
-
-
-
-
-
     }
 }
